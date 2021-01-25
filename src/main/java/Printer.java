@@ -1,9 +1,11 @@
 public class Printer {
 
     private int paperLevel;
+    private int tonerVolume;
 
-    public Printer(int paperLevel){
+    public Printer(int paperLevel, int tonerVolume){
         this.paperLevel = paperLevel;
+        this.tonerVolume = tonerVolume;
     }
 
     public int getPaperLevel(){
@@ -15,6 +17,10 @@ public class Printer {
         if (totalPages < paperLevel){
             this.paperLevel -= totalPages;
         }
+    }
+
+    public int getTonerVolume(){
+        return tonerVolume;
     }
 
 }
