@@ -16,6 +16,7 @@ public class Printer {
         int totalPages = pages * copies;
         if (totalPages < paperLevel){
             this.paperLevel -= totalPages;
+            this.tonerVolume -= totalPages;
         }
     }
 
