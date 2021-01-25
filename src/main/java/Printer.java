@@ -10,4 +10,11 @@ public class Printer {
         return paperLevel;
     }
 
+    public void print(int pages, int copies){
+        int totalPages = pages * copies;
+        if (totalPages < paperLevel){
+            this.paperLevel -= totalPages;
+        }
+    }
+
 }

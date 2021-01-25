@@ -17,4 +17,10 @@ public class PrinterTest {
         assertEquals(100, printer.getPaperLevel());
     }
 
+    @Test
+    public void canPrintCopies(){
+        printer.print(2, 25);
+        assertEquals(50, printer.getPaperLevel());
+    }
+
 }
