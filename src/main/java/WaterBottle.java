@@ -10,4 +10,8 @@ public class WaterBottle {
         return volume;
     }
 
+    public void drink(){
+        this.volume -= 10;
+    }
+
 }
