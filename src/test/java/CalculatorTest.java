@@ -13,18 +13,23 @@ public class CalculatorTest {
     }
 
     @Test
-    public void add(){
+    public void canAdd(){
         assertEquals(4, calculator.add(2, 2));
     }
 
     @Test
-    public void subtract(){
+    public void canSubtract(){
         assertEquals(2, calculator.subtract(4, 2));
     }
 
     @Test
-    public void multiply(){
+    public void canMultiply(){
         assertEquals(10, calculator.multiply(5, 2));
+    }
+
+    @Test
+    public void canDivide(){
+        assertEquals(50, calculator.divide(1000, 20), 0.0);
     }
 
 }
