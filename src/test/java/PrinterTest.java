@@ -18,15 +18,15 @@ public class PrinterTest {
     }
 
     @Test
+    public void hasToner(){
+        assertEquals(500, printer.getTonerVolume());
+    }
+
+    @Test
     public void canPrintCopies(){
         printer.print(2, 25);
         assertEquals(50, printer.getPaperLevel());
         assertEquals(450, printer.getTonerVolume());
-    }
-
-    @Test
-    public void hasToner(){
-        assertEquals(500, printer.getTonerVolume());
     }
 
     @Test
@@ -35,5 +35,4 @@ public class PrinterTest {
         assertEquals(100, printer.getPaperLevel());
         assertEquals(500, printer.getTonerVolume());
     }
-
 }

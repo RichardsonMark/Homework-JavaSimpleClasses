@@ -12,6 +12,10 @@ public class Printer {
         return paperLevel;
     }
 
+    public int getTonerVolume(){
+        return tonerVolume;
+    }
+
     public void print(int pages, int copies){
         int totalPages = pages * copies;
         if (totalPages < paperLevel){
@@ -19,9 +23,4 @@ public class Printer {
             this.tonerVolume -= totalPages;
         }
     }
-
-    public int getTonerVolume(){
-        return tonerVolume;
-    }
-
 }
